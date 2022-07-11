@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigma-Login</title>
+  <link rel="stylesheet" href="../style/login.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Criar conta</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="uil uil-facebook-f"></i></a>
+          <a href="#" class="social"><i class="uil uil-google"></i></a>
+          <a href="#" class="social"><i class="uil uil-linkedin"></i></a>
+        </div>
+        <span>Ou use o seu email para cadastrar</span>
+        <input required  name="nome" type="text" placeholder="Nome">
+        <input required  name="email" type="email" placeholder="Email">
+        <input required  name="senha"type="password" placeholder="Senha">
+        <button class="signUp-popup">Cadastrar</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#" class="sign-In-user">
+        <h1>Login</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="uil uil-facebook-f"></i></a>
+          <a href="#" class="social"><i class="uil uil-google"></i></a>
+          <a href="#" class="social"><i class="uil uil-linkedin"></i></a>
+        </div>
+        <span>Ou use a sua conta</span>
+        <input required type="email" placeholder="Email" id="email-user">
+        <input required type="password" placeholder="Senha" id="password-user">
+        <button>Login</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Sigma Social</h1>
+          <p class="message-1">Compartilhe os momentos mais importantes para você!</p>
+          <p>Esteja sempre próximo ao seus amigos e familiares!</p>
+          <button class="press" id="signIn">Login</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Bem vindo(a) ao Sigma!</h1>
+          <p>Faça parte da comunidade Sigma! <br> Milhões de pessoas estão esperando por você!</p>
+          <button class="press" id="signUp">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blur-photo">
+    <div class="photo-select">
+      <span class="close">X</span>
+      <form action="#" id="signUp-end">
+        <h1>Falta pouco...</h1>
+        <span>Escolha uma foto e @ para o seu perfil</span>
+        <input  required type="url" id="img" placeholder="Url da imagem">
+        <span class="user-id">@ <input type="text" placeholder="nomeusuario"></span>
+        <button >Finalizar</button>
+      </form>
+    </div> 
+  </div>
+  <video autoplay loop>
+    <source src="/video/2  Nightlife People Crowd At Concert Or Club Party.mp4" type="video/mp4">
+  </video>
+  <script type="module" src="/src/script/login.js"></script>
+</body>
+
+</html>

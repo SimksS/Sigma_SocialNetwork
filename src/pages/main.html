@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma - The Stars Social Network</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="../style/main-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                Sigma
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Pesquisar no Sigma search">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Criar</label>
+                <div class="profile-photo">
+                    <img src="/Images/profile-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="left">
+
+                <!------------------------------ PERFIL USUÁRIO---------------------------------------------------------->
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="/Images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="handle">
+                        <h4>Alice Ann</h4>
+                        <p class="text-muted">
+                            @aliann
+                        </p>
+                    </div>
+                </a>
+
+
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3 class="menu-name" >Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-compass"></i></span>
+                        <h3 class="menu-name" >Explorar</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span>
+                        <h3 class="menu-name" >Notificações</h3>
+<!------------------------------- V MENU DE NOTIFICAÇÕES V---------------------------------------------------------->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/Images/profile-2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Christine Amber</b> aceitou a sua solicitação de amizade
+                                    <small class="text-muted">2 horas atrás</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/Images/profile-3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Jaqueline Tompson</b> comentou sua foto
+                                    <small class="text-muted">agora mesmo</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/Images/profile-4.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Lucy Williams</b> comentou sua foto
+                                    <small class="text-muted">agora mesmo</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+<!------------------------------- ^ MENU DE NOTIFICAÇÕES  ^ ---------------------------------------------------------->
+
+                    <a class="menu-item" id="message-notifications">
+                        <span><i class="uil uil-message"><small class="notification-count">6</small></i></span>
+                        <h3 class="menu-name">Mensagens</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span>
+                        <h3 class="menu-name">Marcadores</h3>
+                    </a>
+                    <a class="menu-item" id = "theme">
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3 class="menu-name" >Temas</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3 class="menu-name">Configurações</h3>
+                    </a>
+                    <a class="menu-item" id="signout-button">
+                        <span><i class="uil uil-sign-out-alt"></i></span>
+                        <h3 class="menu-name">Sair</h3>
+                    </a>
+                </div>
+                <label for="create-post" class="btn btn-primary">Criar Publicação</label>
+                
+            </div>
+<!-----------------------------  STORIES ----------------------------------------------------------------------->
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo user-profile-photo">
+                            <img src="/Images/profile-8.jpg">
+                        </div>
+                        <p class="name">Seu Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Images/profile-9.jpg">
+                        </div>
+                        <p class="name">Ada Simons</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Images/profile-10.jpg">
+                        </div>
+                        <p class="name">Jane Masterson</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Images/profile-11.jpg">
+                        </div>
+                        <p class="name">Karine Becker</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Images/profile-12.jpg">
+                        </div>
+                        <p class="name">Dalilah Carey</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Images/profile-13.jpg">
+                        </div>
+                        <p class="name">Sophia Hunt</p>
+                    </div>
+                </div>
+                <form action="" class="create-post">
+                    <div class="profile-photo">
+                        <img src="/Images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="Qual o pensamento do dia?" id="create-post">
+                    <input type="submit" value="Publicar" class="btn btn-primary">
+                </form>
+  <!-------------------------------------- FEED --------------------------------------------------------->
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/Images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Sophia Hunt</h3>
+                                    <small>Paris, 12 minutos atrás</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/Images/feed-1.jpg">
+                        </div>
+<!-----------------------------------PUBLICAÇÃO-------------------------------------------------------------->
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span> <i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="/Images/profile-10.jpg"></span>
+                            <span><img src="/Images/profile-11.jpg"></span>
+                            <span><img src="/Images/profile-12.jpg"></span>
+                            <p><b>Karine Becker </b>e outras <b>32.500 </b>pessoas gostaram disso.</p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Sophia Hunt </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam
+                                obcaecati quibusdam vero optio sint repudiandae eveniet quasi, enim reiciendis
+                                laudantium!<span class="hashtag"> #life</span></p>
+                        </div>
+                        <div class="coments text-muted">Ver todos os 512 comentários</div>
+
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/Images/profile-3.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Beatrice Ann</h3>
+                                    <small>Paris, 12 minutos atrás</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/Images/feed-2.jpg">
+                        </div>
+<!-----------------------------------PUBLICAÇÃO-------------------------------------------------------------->
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span> <i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="/Images/profile-2.jpg"></span>
+                            <span><img src="/Images/profile-3.jpg"></span>
+                            <span><img src="/Images/profile-7.jpg"></span>
+                            <p><b>Julia Mayfield </b>e outras <b>2.744 </b>pessoas gostaram disso.</p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Sophia Hunt </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam
+                                obcaecati quibusdam vero optio.<span class="hashtag"> #life</span></p>
+                        </div>
+                        <div class="coments text-muted">Ver todos os 157 comentários</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Mensagens</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <!--------- BARRA DE PESQUISA --------------------->
+                    <div class="search-bar">
+                        <i class="uil uil-comment-search"></i>
+                        <input type="search" placeholder="Encontrar mensagem" id="messages-search">
+                    </div>
+                    <!----------- CATEGORIA MENSAGENS ---------------------->
+                    <div class="category">
+                        <h6 class="active">Recentes</h6>
+                        <h6>Geral</h6>
+                        <h6 class="messages-requests">Solicitações(2)</h6>
+                    </div>
+                    <!------------------MENSAGENS----------------------------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/Images/profile-19.jpg">
+                            <div class=""></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Arthur Kennedy</h5>
+                            <p class="text-muted">Hey, ficou sabendo da novidade?</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/Images/profile-13.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>James Winter</h5>
+                            <p class="text-muted">Planos para o fim de semana?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="friend-requests">
+                    <h4>Solicitações de amizade</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="/Images/profile-17.jpg">
+                            </div>
+                            <div>
+                                <h5>Sabrina Just</h5>
+                                <p class="text-muted">
+                                    12 amigos em comum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Aceitar
+                            </button>
+                            <button class="btn">
+                                Recusar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-api">
+                    <h4>Noticias</h4>
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-------------------------      CUSTOMIZAÇÃO DE TEMAS  ---------------------------------->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Configuração de temas</h2>
+            <p class="text-muted">Gerencie o tamanho da fonte, cor e fundo.</p>
+
+            <!-----TAMANHO DA FONTE--------------------->
+            <div class="font-size">
+                <h4>Tamanho da fonte</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1 "></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4 active"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!-------CORES PRIMÁRIAS------------------------------>
+            <div class="background">
+                <h4>Cor</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4 "></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            
+            <!----------------------- COR DE FUNDO ------------------------------------>
+            <div class="background">
+                <h4>Cor de fundo</h4>
+                <div class="choose-bg">
+                    <div class="bg-1">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../script/main.js"></script>
+    <script src="../script/Home_Api.js"></script>
+</body>
+
+</html>
