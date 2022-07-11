@@ -8,7 +8,9 @@
 }
 
 body{
-    background-color: #f6f5f7;
+    background: url("/video/2\ \ Nightlife\ People\ Crowd\ At\ Concert\ Or\ Club\ Party_1000.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
